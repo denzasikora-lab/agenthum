@@ -15,6 +15,15 @@ non-empty non-comment lines in `agenthum.py`.
 The project implements a single-agent loop. It is not an MCP server, a
 multi-agent platform, or a full workflow orchestrator.
 
+## Agent Loop Schema
+
+![AgentHum agent loop schema](assets/agent-loop-schema.png)
+
+The diagram shows the core AgentHum cycle: the user sends a task, the agent
+passes context and tool definitions to the LLM, the LLM requests tool calls, the
+agent executes those tools, and tool results are appended back into the message
+history until the model returns a final answer.
+
 ## Features
 
 - Works with OpenAI-compatible servers such as Ollama, vLLM, LM Studio, and
