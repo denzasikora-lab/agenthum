@@ -1,7 +1,7 @@
 [project]
-name = "chebupelka"
+name = "agenthum"
 version = "0.1.0"
-description = "Minimal coding agent"
+description = "A compact OpenAI-compatible human-in-the-loop coding agent"
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31.0",
